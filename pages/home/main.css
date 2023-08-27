@@ -1,0 +1,39 @@
+body {
+    background-image: url("/images/ivana-bg.jpg");
+}
+.content {
+    width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 35px;
+}
+.Lpd {
+    padding-left: 80px;
+}
+.top_pad {
+    padding-top: 50px;
+}
+.Right_pad {
+    padding-right: 60px;
+}
+.welcome {
+    width: 80%;
+    margin: auto;
+}
+.wc-image {
+    display:flex;
+    align-items: end;
+}
+.afro_img {
+    padding-left: 60px;
+}
+.img-wc {
+    margin: auto;
+}
+.wc-text {    
+    padding-top: 2em;
+    color: #fff;
+}
+.wc-btn {
+    margin-left: 40%;
+}

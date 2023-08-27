@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(248, 217, 206) !important;
+}
+
+.img-size {
+    width: 250px;
+}
+.border-edge {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body > p {
+    margin-bottom: 3px;   
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.itemBtn {
+    background-color: rgb(42, 62, 243);
+    color: aliceblue;
+    border: 0px;
+    border-radius: 5px;
+    
+}
+      
