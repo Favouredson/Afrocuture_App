@@ -2,7 +2,7 @@
     const gamesContainer = document.getElementById("gamesContainer");
 
     // Your RAWG API key
-    const apiKey = "48d12b2d6d294f5baf12072767652717";
+    // const apiKey;
 
     async function fetchGames() {
       try {
