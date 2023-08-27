@@ -55,10 +55,22 @@ $(document).ready(function () {
     }
   };
 
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const phoneNumber = document.getElementById("phoneNumber");
+  const cardName = document.getElementById("cardName");
+  const address = document.getElementById("address");
   const creditCardInput = document.getElementById("creditCardInput");
   const dateInput = document.getElementById("dateInput");
   const cardCVVInput = document.getElementById("cardCVVInput");
-
+  
+  firstName.addEventListener("input", () => validateInput(firstName, /^[A-Za-z]+$/));
+  lastName.addEventListener("input", () => validateInput(lastName, /^[A-Za-z]+$/));
+  email.addEventListener("input", () => validateInput(email, /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/));
+  phoneNumber.addEventListener("input", () => validateInput(phoneNumber, /^\d{3}-\d{3}-\d{4}$/));  
+  cardName.addEventListener("input", () => validateInput(cardName, /^[A-Za-z\s]+$/));
+  address.addEventListener("input", () => validateInput(address, /^(?:\d+\s)?(?:[A-Za-z\s]+,?\s?)+[A-Za-z]+\s\d{5}(-\d{4})?$/));
   creditCardInput.addEventListener("input", () => validateInput(creditCardInput, /^\d{1,16}$/));
   dateInput.addEventListener("input", () => validateInput(dateInput, /^(0[1-9]|1[0-2])\/\d{2}$/));
   cardCVVInput.addEventListener("input", () => validateInput(cardCVVInput, /^\d{1,3}$/));
